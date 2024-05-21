@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" >
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo/Flens-Logo.png">
+    <title>FLENS Competition</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid-library.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Mulish links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- Font Roboto Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body onclick="">
+
+    <button id="submit-onscreen" >
+        <a  href="https://forms.gle/8eiyxWRf8uzP3nbm7">
+            <i class="fa-solid fa-heart"></i>
+        </a>
+    </button>
+    
+
+    <div class="loader">
+        
+        <img src="./assets/img/logo/Flens-Competition-Logo.png" alt="" class="loader-img">
+        <img src="./assets/img/logo/Flens-Logo.png" alt="" class="loader-img-mobile">
+        <p style="color: #fff;">Đợi F-Lens chút nha</p>
+    </div>
+
+    <div class="header">
+        <div class="grid">
+            <div class="row" style="align-items: center;">
+                <div class="col l-4 m-0 c-0">
+                    <a href="#">
+                        <div class="header-img-container">
+                            <img class="header-img--logo" src="./assets/img/logo/Flens-Competition-Logo.png" alt="FLENS_COMPETITON">
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-8 m-0 c-0">
+                    <div class="header-navbar">
+                        <ul class="header-navbar-list">
+                            <!-- Item 1 -->
+                            <a href="#home-s" class="header-navbar-link">
+                                <li class="header-navbar-list-item hover-underline-animation">
+                                    <i class="fa-solid fa-house"></i> Home</li>
+                            </a>
+
+                            <!-- Item 2 -->
+                            <a href="#about-s" class="header-navbar-link">
+                                <li class="header-navbar-list-item hover-underline-animation">
+                                    <i class="fa-regular fa-heart"></i> F-Lens</li>
+                            </a>
+
+                            <!-- Item 3 -->
+                            <a href="#competition-infor-s" class="header-navbar-link">
+                                <li class="header-navbar-list-item hover-underline-animation">
+                                    <i class="fa-solid fa-fire"></i> Competition</li>
+                            </a>
+
+                            <!-- Item 4 -->
+                            <a href="#rule-s" class="header-navbar-link">
+                                <li class="header-navbar-list-item hover-underline-animation">
+                                    <i class="fa-solid fa-book-open"></i> Rules</li>
+                            </a>
+
+                            <!-- Item 5 -->
+                            <a href="#timeline-s" class="header-navbar-link">
+                                <li class="header-navbar-list-item hover-underline-animation">
+                                    <i class="fa-regular fa-clock"></i> Timeline</li>
+                            </a>
+
+                            <!-- Item 6 -->
+                            <a href="#footer" class="header-navbar-link">
+                                <li class="header-navbar-list-item hover-underline-animation">
+                                    <i class="fa-solid fa-phone"></i> Contact</li>
+                            </a>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+                <div class="col l-12 m-12 c-12">
+                    <a href="#">
+                        <div class="header-img-container">
+                            <img class="header-img--logo logo-mobile" src="./assets/img/logo/Flens-Competition-Logo.png" alt="FLENS_COMPETITON">
+                        </div>
+                    </a>
+
+                    <!-- MOBLE NAVIGATION -->
+                    <div class="mobile-nav">
+
+                        <div id="mobileNav" class="overlay">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                            <div class="overlay-content">
+                              <a onclick="closeNav()" href="#">
+                                <i class="fa-solid fa-house"></i> Home</a>
+                              <a onclick="closeNav()" href="#about-s">
+                                <i class="fa-regular fa-heart"></i> F-Lens</a>
+                              <a onclick="closeNav()" href="#competition-infor-s">
+                                <i class="fa-solid fa-fire"></i> Competition</a>
+                              <a onclick="closeNav()" href="#rule-s">
+                                <i class="fa-solid fa-book-open"></i> Rules</a>
+                              <a onclick="closeNav()" href="#timeline-s">
+                                <i class="fa-regular fa-clock"></i> Timeline</a>
+                              <a onclick="closeNav()" href="#footer">
+                                <i class="fa-solid fa-phone"></i> Contact</a>
+                            
+                            </div>
+                            <p>Web designed by <br>CLB Sự kiện F-Active</p>
+                        </div>
+                          <span class="menu-icon" onclick="openNav()">&#9776;</span>
+                
+                    </div>
+                    </div>
+            </div>
+        </div>
+         <!-- Scroll Indicator -->
+         <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </div>
+
+    <section id="home-s" class="home-page">
+        <img src="./assets/img/Asset 12.png" alt="" style="width: 30%;" class="color-col-home">
+        <div class="grid wide">
+            <div class="row" style="align-items: center;">
+                <div class="col l-6 m-6 c-12">
+                    <div class="home-title-wrapper " data-aos="fade-down" data-aos-duration="2000" data-aos-delay="300">
+                        <!-- <p class="home-title-description">Cuộc thi Phim ngắn & Nhiếp ảnh</p> -->
+
+
+                        <div class="home-title-text-wrapper">
+                            <div 
+                            style="
+                            font-size: 1.6rem; 
+                            font-weight: 800;
+                            letter-spacing: 2px;
+                            overflow: visible;
+                            animation: lights 5s 750ms linear infinite;
+                            ">F-LENS</div> 
+                            <div> 
+                                    <span>&nbsp;&nbsp;&nbsp; Cuộc thi phim ngắn và storyboard</span>
+                            </div>
+                        </div>
+
+                        <div class="home-title-text-wrapper-mobile">
+                            <div style="font-size: 1.6rem; font-weight: 800;">F-LENS</div>
+                            <p>&nbsp;&nbsp;&nbsp; Cuộc thi phim ngắn và storyboard</p>
+                        </div>
+
+
+
+                        <img src="./assets/img/logo/F-lens Typo-1.png" alt="" class="home-typo-img">
+                    </div>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                    <div class="home-content-wrapper">
+
+                        <div class="home-text-wrapper">
+                            <p class="home-text">
+                                Thời hạn nộp bài <br>
+                                <span>12h</span> ngày <span>13</span> tháng <span>06 </span> năm <span>2024</span>
+                            </p>
+                        </div>
+                        <div class="timer-countdown">
+                            <p id="countdown"></p>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12" style="display: flex; justify-content: center; margin-top: 30px;">
+                                <!-- <a href="https://forms.gle/8eiyxWRf8uzP3nbm7">
+                                    <button class="btn-new btn-new--action" role="button">Đăng ký</button>
+                                </a> -->
+
+                                <a class="btn-new btn-new--action" href="https://forms.gle/8eiyxWRf8uzP3nbm7">
+                                    <span>Đăng ký!</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+                <div class="row" style="
+                justify-content: center;
+                position: relative; top: 120px;
+            ">
+                <div class="indicator">
+                    <!-- <span></span>
+                    <span></span>
+                    <span></span> -->
+                    <a href="#about-s"> 
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>             
+            </div>
+        </div>
+    </section>
+
+    <section id="about-s" class="about">
+        <img src="./assets/img/Asset 4.png" alt="" class="about-colorline">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-6 m-6 c-12">
+                    <!-- <img src="./assets/img/poster.png" alt="" class="about-img"> -->
+                    <video playsinline loop autoplay muted class="about-video">
+                        <source src="./assets/Comp-optimized-2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                    <div class="about-content">
+                        <h2 class="about-heading-season">Mùa 4</h2>
+                        <h2 class="about-heading">F-LENS 4 LOVING LIFE</h2>
+                        <p class="about-text">
+                            Mỗi chúng ta đều có những định nghĩa riêng về thứ cảm xúc kỳ diệu 
+                            mang tên "Tình yêu".  Đó có thể là sự gắn kết của tình yêu đôi lứa, 
+                            là tình cảm gia đình, là lòng trắc ẩn, hay đơn giản chỉ là tình yêu 
+                            thương dành bản thân… Nhưng dù ở định nghĩa nào, tình yêu luôn mang đến 
+                            cho chúng ta cuộc sống muôn màu và ý nghĩa hơn.
+                            <br>
+                            <br>
+                            F-LENS mùa 4 chính thức thay đổi hình thức dự thi thành 2 bảng: 
+                            Phim ngắn và Storyboard. Hoạt động này sẽ giúp sinh viên có thêm kinh 
+                            nghiệm và ứng dụng kiến thức trong lĩnh vực sản xuất kịch bản và phim ngắn.</p>
+                    </div>
+                        
+                </div>
+            </div>
+            <div class="row" style="margin-top: 50px;">
+                <div class="col l-6 m-6 c-12">
+                    <div class="about-content">
+                        <!-- <h2 class="about-heading-season">Thông tin chung</h2> -->
+                        <h2 class="about-heading">F-LENS COMPETITION</h2>
+                        <p class="about-text">
+                            Nhằm tạo điều kiện cho các bạn sinh viên có cơ hội sáng tạo và rèn 
+                            luyện các kỹ năng cá nhân, bộ môn Biz phối hợp với phòng CTSV quyết 
+                            định tổ chức cuộc thi sáng tạo F-Lens 4 Loving Life, đây là một sân 
+                            chơi dành cho các bạn sinh viên đam mê lĩnh vực truyền thông và nghệ 
+                            thuật có thể thỏa sức sáng tạo thông qua các hình ảnh và những thước 
+                            phim ngắn. 
+                            <br>
+                            <br>
+                            F-Lens 4 Loving Life nhằm hướng đến việc tôn vinh những giá trị thiêng 
+                            liêng của cuộc sống: tình yêu con người, quê hương và gia đình,... 
+                            Thông qua cách kể chuyện bằng hình ảnh, tác phẩm có thể gửi gắm những 
+                            thông điệp tích cực và lan tỏa, hướng đến kêu gọi hành động từ cộng đồng.
+                    </div>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                    <div class="works-slider">
+                        <!-- Slide 1 -->
+                        <div>
+                            <div class="works-slide">
+                                <img src="./assets/img/mùa 1.jpg" alt="" class="works-slide-img">
+                                <div class="works-text-wrapper">
+                                    <h3 class="works-subheading ">Mùa 1</h3>
+                                    <h2 class="works-heading">
+                                        "Create to sustain"
+                                    </h2>
+                                    <p class="works-description">
+                                        Khai thác góc nhìn đa chiều về hàng loạt vấn đề về cuộc sống. 
+                                        Những giải pháp sáng tạo được ra đời nhằm kiến tạo một xã hội bền vững.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div>
+                            <div class="works-slide">
+                                <img src="./assets/img/mùa 2.jpg" alt="" class="works-slide-img">
+                                <div class="works-text-wrapper">
+                                    <h3 class="works-subheading ">Mùa 2</h3>
+                                    <h2 class="works-heading">
+                                        “F-lens on Mekong”
+                                    </h2>
+                                    <p class="works-description">
+                                        Vùng đất hạ nguồn của dòng sông Mekong hùng vĩ. 
+                                        Cuộc thi khai về văn hóa, xã hội và cuộc sống của 
+                                        người dân Đồng bằng sông Cửu Long.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div>
+                            <div class="works-slide">
+                                <img src="./assets/img/mùa 3.jpg" alt="" class="works-slide-img">
+                                <div class="works-text-wrapper">
+                                    <h3 class="works-subheading ">Mùa 3</h3>
+                                    <h2 class="works-heading">
+                                        “Happy famers”
+                                    </h2>
+                                    <p class="works-description">
+                                        Hành trình tìm đến những khía cạnh của nền nông nghiệp 
+                                        Đồng bằng sông Cửu Long. “Happy Farmers” mang đến cho khán giả 
+                                        cận cảnh các thách thức và khó khăn mà nông dân đang phải đối mặt. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competition-infor-s" class="competition-infor">
+        <!-- <img src="./assets/img/Asset 4.png" alt="" class="color-col"> -->
+        <img src="./assets/img/Asset 2.png" alt="" style="width: 3.8%;" class="color-col-rule">
+
+        <div class="grid wide">
+            <div class="competition-heading">THÔNG TIN VÒNG THI</div>
+            <div class="row">
+                <div class="col l-4 m-12 c-12">
+                    <div class="competition-content-wrapper">
+                        <h2 class="competition-title">
+                            I. Vòng Sơ khảo 
+                        </h2>
+                        <p class="competition-description">
+                            Các tác phẩm dự thi sẽ được Ban tổ chức xem xét, 
+                            đánh giá để chọn ra những tác phẩm có nội dung và chất lượng phù hợp.
+                        </p>
+                    </div>
+                </div>
+                <div class="col l-4 m-12 c-12">
+                    <div class="competition-content-wrapper">
+                        <h2 class="competition-title">
+                            II. Vòng bình chọn
+                        </h2>
+                        <p class="competition-description">
+                            Kết quả vòng hai sẽ dựa vào kết quả bình chọn 
+                            và đánh giá từ hội đồng chuyên môn. Gồm 2 vòng bình chọn: Fan Voting và Online Voting.
+                        </p>
+                    </div>
+                </div>
+                <div class="col l-4 m-12 c-12">
+                    <div class="competition-content-wrapper">
+                        <h2 class="competition-title">
+                            III. Vòng Chung khảo
+                        </h2>
+                        <p class="competition-description">
+                            07 tác phẩm ở mỗi hạng mục có số điểm cao nhất 
+                            sẽ thuyết trình trong vòng 05 phút (không tính thời 
+                            gian chiếu sản phẩm) và 10 phút trả lời câu hỏi từ Ban giám khảo              
+                        </p>
+                    </div>
+                </div>
+                
+                
+                <div class="col l-6 m-6 c-12">
+                    
+                </div>
+                <div class="col l-6 m-6 c-12">
+                    
+                </div>
+
+
+                
+            
+            </div>
+            <div class="row">
+                <div class="col l-4 m-4 c-12"></div>
+                <div class="col l-4 m-4 c-12">
+                    
+                </div>
+                <div class="col l-4 m-4 c-12"></div>
+                <div class="col l-6 m-6 c-12">
+                    
+                </div>
+                <div class="col l-6 m-6 c-12">
+                    <!-- <div class="competition-content-wrapper">
+                        <h2 class="competition-title">
+                            IV. Vòng chung kết 
+                        </h2>
+                        <p class="competition-description">
+                            Hội đồng: 02 bảng thi chấm song song 
+                            <br>
+                            <br>07 tác phẩm ở mỗi hạng mục có lượt bình chọn cao 
+                            nhất (30% bình chọn khán giả + 70% bình chọn BGK) 
+                            sẽ thuyết trình 05 phút (không tính thời gian chiếu sản phẩm) 
+                            và 10 phút trả lời câu hỏi Ban giám khảo.            
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- <div class="col l-12 m-12 c-12"> -->
+                    <!-- <div class="competition-heading">THÔNG TIN VÒNG THI</div> -->
+                    <!-- <div class="competition-slider"> -->
+                        <!-- SLIDE 1 -->
+                        <!-- <div>
+                            <div class="competition-content-wrapper">
+                                <h2 class="competition-title">
+                                    I. Vòng Sơ khảo 
+                                </h2>
+                                <p class="competition-description">
+                                    Các bài dự thi sẽ được BGK phân loại theo tiêu chí 
+                                    <br>Đạt/Không đạt. 
+                                    <br>Các tác phẩm Đạt sẽ được tham gia 
+                                    <br>Triển lãm và Liên hoan phim
+                                </p>
+                            </div>
+                            <div class="competition-content-wrapper">
+                                <h2 class="competition-title">
+                                    II. Liên hoan phim - Triển lãm 
+                                </h2>
+                                <p class="competition-description">
+                                    Các tác phẩm sẽ được khán giả bình chọn trực tiếp tại 
+                                    <br>Triển lãm và Liên hoan phim
+                                    <br>Bình chọn trực tiếp chiếm 15% tổng số điểm
+                                </p>
+                            </div>
+                        </div> -->
+                        <!-- SLIDE 2 -->
+                        <!-- <div>
+                            <div class="competition-content-wrapper">
+                                <h2 class="competition-title">
+                                    III. Vòng Bình chọn 
+                                </h2>
+                                <p class="competition-description">
+                                    Các tác phẩm qua vòng sơ khảo sẽ được đăng tải trên 
+                                    <br>Fanpage Ngành Truyền thông Đa phương tiện ĐH FPT 
+                                    <br>Cần Thơ để tiến hành được bình chọn trực tuyến.
+                                    <br>
+                                    <br>Kết quả vòng hai sẽ dựa vào 30% kết quả bình chọn 
+                                    <br>và 70% đánh giá của ban giám khảo. 
+                                    
+                                </p>
+                            </div>
+                            <div class="competition-content-wrapper">
+                                <h2 class="competition-title">
+                                    IV. Vòng chung kết 
+                                </h2>
+                                <p class="competition-description">
+                                    Hội đồng: 02 bảng thi chấm song song 
+                                    <br>
+                                    <br>07 tác phẩm ở mỗi hạng mục có lượt bình chọn cao 
+                                    <br>nhất (30% bình chọn khán giả + 70% bình chọn BGK) 
+                                    <br>sẽ thuyết trình 05 phút (không tính thời gian chiếu sản phẩm) 
+                                    <br>và 10 phút trả lời câu hỏi Ban giám khảo. 
+                                    
+                                </p>
+                            </div>
+                        </div> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+        </div>
+    </section>
+
+    <section id="rule-s" class="rule">
+        <img src="./assets/img/Asset 2.png" alt="" style="width: 3.8%;" class="color-col-rule">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="rule-heading">THỂ LỆ</div>
+                    <div class="rule-content-wrapper">
+                        <div class="rule-content">
+                            <h2 class="rule-content-title">Đối tượng dự thi</h2>
+                            <p class="rule-content-text">
+                                Sinh viên đang theo học tại Đại học FPT Cần Thơ.
+                                Sinh viên có thể tham gia với tư cách cá nhân hoặc nhóm (không giới hạn số lượng thành viên).
+                            </p>
+                        </div>
+                        <div class="rule-content">
+                            <h2 class="rule-content-title">Quy chế</h2>
+                            <p class="rule-content-text">
+                    
+                                Ý tưởng của sản phẩm dự thi phải truyền tải được những hình ảnh về cuộc sống, 
+                                động lực vươn lên, hoặc những câu chuyện ý nghĩa. 
+                            </p>
+                            <div class="rule-list-wrapper">
+                                <ul class="rule-list">
+                                    <li class="rule-item-list" style="font-weight: bold;">
+                                        Tác phẩm phải liên quan đến chủ đề “F-Lens 4 Loving Life”, 
+                                        làm nổi bật được thông điệp về tình yêu con người, quê hương, 
+                                        cuộc sống,…
+                                    </li>
+                                    <li class="rule-item-list" style="font-weight: bold;">
+                                        Tác phẩm dự thi phải thuộc quyền sở hữu của tác giả, không tranh chấp 
+                                        quyền tác giả với bất kỳ tổ chức / cá nhân nào.</li>
+                                    <!-- <li class="rule-item-list" style="font-weight: bold;">
+                                        Trường hợp tác phẩm dự thi sử dụng tư liệu hình ảnh, âm thanh,… có bản 
+                                        <br>quyền, tác giả dự thi phải đảm bảo chỉ sử dụng tư liệu đã có văn 
+                                        <br>bản/email/bằng chứng chấp thuận từ chủ sở hữu, tôn trọng bản quyền 
+                                        <br>tác giả. Nếu vi phạm, BTC sẽ hủy tư cách dự thi của tác phẩm.  
+                                    </li> -->
+                                    <li class="rule-item-list" style="font-weight: bold;"> 
+                                        Các tác phẩm dự thi không phải là các sản phẩm của AI, hoặc sử dụng 
+                                        công cụ AI để hỗ trợ trong quá trình sáng tạo. Nếu vi phạm, BTC sẽ hủy 
+                                        tư cách dự thi của tác phẩm. 
+                                    </li>
+                                    <li class="rule-item-list" style="font-weight: bold;"> 
+                                        Tác phẩm dự thi có thể là sản phẩm từ các bài tập trên lớp, nhưng chưa 
+                                        được công bố trên các kênh hay nền tảng mạng xã hội.  
+                                    </li>
+                                    <!-- <li class="rule-item-list"> 
+                                        Tác phẩm không được vi phạm thuần phong mỹ tục, quy định của Nhà nước 
+                                        <br>và Nghị định 144/2020/NĐ-CP.  
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="classify-s" class="classify">
+        <img src="./assets/img/Asset 16.png" alt="" class="classify-color-line">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="classify-wrapper">
+                        <div class="classify-category">
+                            <div class="classify-category-name--wrapper">
+                                <ul class="classify-category-list">
+                                    <li class="classify-category-list-item">
+                                         <h3 class="classify-category--name">Phim ngắn</h3>
+                                    </li>
+                                    <li class="classify-category-list-item">
+                                        <h3 class="classify-category--name">Story-board</h3>
+                                     </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h2 class="classify-content-heading">Hạng mục</h2>
+                        <div class="classify-content-container">
+                            <div class="classify-content">
+                                <h3 class="classify-name--mobile">Phim ngắn</h3>
+                                <p class="classify-content-text">
+                                    <b>Bài dự thi bao gồm:</b>
+                                    <br>
+                                    <br>File video Full HD 1080p (1920x1080), frame 16:9, định dạng mp4, 
+                                    thời lượng tối đa 15-20 phút, dung lượng tối đa 3GB.
+                                    <br>
+                                    <br>
+                                    Bản tóm tắt kịch bản của phim và kỹ thuật, thiết bị dựng phim. 
+                                    Có thể dùng ngôn ngữ Tiếng Anh hoặc tiếng Việt.
+                                    <br>
+                                    <br>Nộp Treatment của phim. Treatment có thể viết ngôn ngữ Anh hoặc Việt.  
+                                    Mã QR code góc phải, bên dưới video dẫn đến thông tin và treatment của phim. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="classify-content-container">
+                            <div class="classify-content">
+                                <h3 class="classify-name--mobile">Story-board</h3>
+                                <p class="classify-content-text">
+                                    <b>Bài dự thi bao gồm:</b>
+                                    <br>
+                                    <br>
+                                    <b>Poster</b> định dạng .jpeg và file thiết kế gốc, kích thước A3, định dạng dọc (297x420mm).
+                                    File .pdf được thiết kế theo dạng quyển.
+                                    <br>
+                                    <br> <b>Storyboard</b> định dạng .pdf, kích thước A3, được thiết kế trang dọc, theo dạng quyển, đảm bảo 
+                                    đầy đủ các yếu tố: khung, số phân cảnh, góc máy, cú máy, thoại (nếu cần), và mô tả phân cảnh. 
+                                    Tối đa 30 trang.
+                                    <br>
+                                    <br>
+                                    Mã QR code góc phải, bên dưới, ở ngoài bìa của quyển storyboard dẫn đến thông tin chung của sản phẩm.
+                                    <br>
+                                    <br>Một bài luận diễn giải về nội dung của hình ảnh tối đa 1000 từ bao gồm các nội dung concept, logline, tagline, thông điệp, và nhân vật. 
+                                    Bài luận có thể dùng ngôn ngữ tiếng Anh hoặc tiếng Việt 
+                                    <br><em>(Lưu ý: thí sinh phải để nguồn tham khảo hoặc lấy cảm hứng ở cuối bài luận)</em>
+
+                                    <br> 
+                                    <br>Trước khi vào nội dung của story-board, thí sinh phải có tóm tắt câu chuyện, concept, logline, tagline, thông điệp, và giới thiệu nhân vật.  
+                                    Story-board phải đảm bảo đầy đủ các yếu tố: khung, số phân cảnh, góc máy, cú máy, thoại (nếu cần), và mô tả phân cảnh. 
+                                    <br>
+                                    <br>Ngôn ngữ sử dụng trong story-board có thể là Việt hoặc Anh tùy thuộc vào ngôn ngữ truyền tải của sản phẩm 
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="criteria">
+        <img src="./assets/img/Asset 4.png" alt="" class="criteria-colorline-img">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="criteria-heading">Tiêu chí chấm điểm</div>
+
+                    <table class="criteria-table">
+                        <tr>
+                            <td class="criteria-col">Loại hình</td>
+                            <td class="criteria-col">Yêu Cầu</td>
+                        </tr>
+                        <tr>
+                            <td class="criteria-cell-center">Phim Ngắn</td>
+                            <td>
+                                <ul class="criteria-list">
+                                    <li class="criteria-list-item">
+                                        Nội dung phim truyền đạt được hiệu quả xúc cảm 
+                                        và thông điệp nội dung của chủ đề, nội dung phân bố hợp lý 
+                                        và độ dài phù 
+                                        hợp.
+                                    </li>
+                                    <li class="criteria-list-item">
+                                        Chất lượng video tốt, rõ nét, âm thanh sống động, 
+                                        sử dụng các kỹ thuật xử lý hình ảnh, hiệu ứng, 
+                                        âm thanh, kỹ thuật quay, màu sắc,..
+                                    </li>
+                                    <li class="criteria-list-item">
+                                        Kịch bản phim sáng tạo, ý tưởng độc đáo, thu hút 
+                                        người xem, và có sức lan tỏa và ảnh hưởng đến cộng đồng, 
+                                        diễn xuất chân thật và lột tả được nhân vật trong phim
+                                    </li>
+                                    <li class="criteria-list-item">
+                                        Phụ đề không mắc các lỗi chính tả, ngữ pháp; 
+                                        thông tin trong video không bị sai lệch
+                                    </li>
+                                    
+                                    
+                                    
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="criteria-cell-center">Hình ảnh <br>(Poster và storyboard)</td>
+                            <td>
+                                <ul class="criteria-list">
+                                    <li class="criteria-list-item">
+                                        Hình ảnh phải thể hiện được chủ đề cuộc thi, truyền tải được thông 
+                                        điệp đến người xem, đảm bảo các yếu tố kỹ thuật như: bố cục, kết hợp màu sắc, 
+                                        font chữ,..
+                                    </li>
+                                    <li class="criteria-list-item">
+                                        Storyboard phải thể hiện đầy đủ element: khung hình, số cảnh, chú thích 
+                                        (Action, Dialogue, FX), có tính sáng tạo trong cỡ cảnh, góc máy, 
+                                        cú máy thông qua khung hình storyboard.
+                                    </li>  
+                                    <li class="criteria-list-item">
+                                        Cốt truyện sáng tạo, logic, gửi thông điệp sâu sắc, mang tính sáng tạo, 
+                                        thẩm mỹ, ý tưởng độc đáo, có sức lan tỏa trong cộng đồng.
+                                    </li>  
+                                    <li class="criteria-list-item">
+                                        Đảm bảo chất lượng hình ảnh: độ sắc nét của các chi tiết, độ phân giải ảnh,..
+                                    </li>  
+                                    <li class="criteria-list-item">
+                                        Nội dung trong bài luận phải làm rõ hơn về tác phẩm dự thi, trình bày rõ ràng, không sai chính tả.
+                                    </li>                   
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="award-s" class="award">
+        <div class="grid wide">
+
+             <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="award-heading"><i class="fa-solid fa-award"></i> GIẢI THƯỞNG</div>
+                    <!-- <div class="award-text">
+                        <div class="award-title">TỔNG GIÁ TRỊ GIẢI THƯỞNG</div>
+                        <div class="award-count">
+                            <div class="award-count-number">11,400,000 VND</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col l-6 m-6 c-12">
+                    <div class="award-heading-sub">PHIM NGẮN</div>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                    <div class="award-heading-sub">STORYBOARD</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col l-6 m-6 c-12">
+                    <div class="award-content-wrapper">
+                        <div class="award-content-title"><i class="fa-solid fa-medal"></i> Giải nhất</div>
+                        <p>3.000.000 VND</p>
+                        <p>Cùng biểu trưng</p>
+                    </div>
+                </div>
+                <div class="col l-6 m-6 c-12">
+                    <div class="award-content-wrapper">
+                        <div class="award-content-title"><i class="fa-solid fa-medal"></i> Giải nhất</div>
+                        <p>2.000.000 VND</p>
+                        <p>Cùng biểu trưng</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col col l-6 m-6 c-12">
+                    <div class="award-content-wrapper">
+                        <div class="award-content-title"><i class="fa-solid fa-medal"></i> Giải nhì</div>
+                        <p>2.000.000 VND</p>
+                    </div>
+                </div>
+                <div class="col col l-6 m-6 c-12">
+                    <div class="award-content-wrapper">
+                        <div class="award-content-title"><i class="fa-solid fa-medal"></i> Giải nhì</div>
+                        <p>1.500.000 VND</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col l-6 m-6 c-12">
+                    <div class="award-content-wrapper">
+                        <div class="award-content-title"><i class="fa-solid fa-medal"></i> Giải ba</div>
+                        <p>1.500.000 VND</p>
+                    </div>
+                </div>
+                <div class="col col l-6 m-6 c-12">
+                    <div class="award-content-wrapper">
+                        <div class="award-content-title"><i class="fa-solid fa-medal"></i> Giải ba</div>
+                        <p>1.000.000 VND</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col l-6 m-6 c-12">
+                    <div class="award-content-wrapper">
+                        <div class="award-content-title"><i class="fa-solid fa-medal"></i> Giải bình chọn</div>
+                        <p>400.000 VND</p>
+                    </div>
+                </div>
+                <div class="col col l-6 m-6 c-12">
+                    <div class="award-content-wrapper">
+                        <div class="award-content-title"><i class="fa-solid fa-medal"></i> Giải bình chọn</div>
+                        <p>400.000 VND</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="award-mobile">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline-s" class="timeline">
+        <img src="./assets/img/Asset 12.png" alt="" class="timeline-colorline">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-12 m-12 c-12">
+                    <div class="timeline-heading">TIMELINE</div>
+                    <div class="timeline-wrapper">
+                <!-- ROW 1 -->
+                    <div class="timeline-container timeline-left">
+                        <a onclick="alert('Chưa có thông tin!')" class="timeline-link">
+                            <did id="time-1" class="timeline-content">
+                                <h2>Worskshop Storyboard và Phim Ngắn</h2>
+                                <p>27/05/2024 đến ngày 02/06/2024</p>
+                            </did>
+                        </a>
+                      </div>
+                    <div class="timeline-container timeline-right">
+                        <a onclick="alert('Chưa có thông tin!')" class="timeline-link">
+                            <div id="time-2" class="timeline-content" style="text-align: left;">
+                              <h2>Bình chọn trực tiếp</h2>
+                              <p>16/06/2024 đến ngày 23/06/2024</p>
+                            </div>
+                        </a>
+                      </div>
+                <!-- ROW 2 -->
+                      <div class="timeline-container timeline-left">
+                        <a onclick="alert('Chưa có thông tin!')" class="timeline-link">
+                            <div id="time-3" class="timeline-content">
+                              <h2>Bình chọn trực tuyến</h2>
+                              <p>23/06/2024 đến ngày 25/06/2024</p>
+                            </div>
+                        </a>
+                      </div>
+                    <div class="timeline-container timeline-right">
+                        <a onclick="alert('Chưa có thông tin!')" class="timeline-link">
+                            <div id="time-4" class="timeline-content" style="text-align: left;">
+                              <h2>Công bố đội thi vòng bình chọn</h2>
+                              <p>12h ngày 26/06/2024</p>
+                            </div>
+                        </a>
+                      </div>
+                <!-- ROW 3 -->
+                      <div class="timeline-container timeline-left">
+                        <a onclick="alert('Chưa có thông tin!')" class="timeline-link">
+                            <div id="time-5" class="timeline-content">
+                              <h2>Vòng chung khảo</h2>
+                              <p>28/06/2024</p>
+                            </div>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="support">
+        <img src="./assets/img/Asset 4.png" alt="" class="support-color-line">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-6 m-12 c-12">
+                    <div style="margin: 0;" class="support-wrapper">
+                        <h3 class="support-title">Đơn vị tổ chức</h3>
+                        <div class="row support-img-container">
+                            <div class="col l-12 m-12 c-12">
+                                <a href="https://www.facebook.com/daihocfptcantho" class="support-link">
+                                    <img style="margin-left: 0;" src="./assets/img/logo/FPTEdu-Logo-White.png" alt="" class="support-img fpt">
+                                </a>
+                                <a href="https://www.facebook.com/FPTU.CT.PCTSV" class="support-link">
+                                    <img src="./assets/img/logo/LOGO-SRO-Notext.png" alt="" class="support-img sro">
+                                </a>
+                                <a href="https://www.facebook.com/QTKDCANTHO" class="support-link">
+                                    <img src="./assets/img/logo/BIZ-Logo-White.png" alt="" class="support-img biz">
+                                </a>
+                                <a href="https://www.facebook.com/FPTU.FMCT" class="support-link">
+                                    <img src="./assets/img/logo/MC-Logo-White.png" alt="" class="support-img mc">
+                                </a>
+                            </div>                    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col l-6 m-12 c-12">
+                    <div class="support-wrapper">
+                        <h3 class="support-title">Đơn vị đồng hành</h3>
+                        <div class="row">
+                            <div class="col l-4 m-12 c-12">
+                                <a href="https://www.facebook.com/Active.Event.Club" class="support-link">
+                                    <img style="margin-left: 0;" src="./assets/img/logo/FAC - Logo - White.png" alt="" class="support-img fac">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-8 m-12 c-12">
+                    <div class="footer-content-wrapper">
+                        <img src="./assets/img/logo/F-lens Typo-1.png" alt="" class="footer-typo-img">     
+                        <img src="./assets/img/logo/Flens-Logo.png" style="width: 20%;" alt="" class="footer-typo-img">                                            </div>
+                </div>
+                <div class="col l-4 m-12 c-12">
+                    <div class="footer-content-wrapper">
+                        <div class="footer-contact">
+                                <ul class="footer-contact-list">
+                                    <a href="mailto:kenhthongtinmc@gmail.com" class="footer-contact-link">
+                                        <li class="footer-contact-list--item">
+                                            <i class="fa-regular fa-envelope"></i> kenhthongtinmc@gmail.com
+                                        </li>
+                                    </a>
+                                    <a href="tel: 02923601995" class="footer-contact-link">
+                                        <li class="footer-contact-list--item">
+                                            <i class="fa-solid fa-phone"></i> 0292 3601 995
+                                        </li>
+                                    </a>
+                                    <a href="https://www.facebook.com/FPTU.FMCT" class="footer-contact-link">
+                                        <i class="fa-brands fa-facebook"></i> 
+                                        <li class="footer-contact-list--item">Ngành Truyền thông Đa phương tiện ĐH FPT Cần Thơ</li>
+                                    </a>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row footer-author-wrapper">
+                <p class="footer-author">
+                    Được tổ chức bởi Ngành Truyền thông Đa phương tiện 
+                    <br>Đại học FPT Cần Thơ
+                    <br>Email: kenhthongtinmc@gmail.com 
+                </p>
+            </div>
+    </footer>
+
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/20f93b2142.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/js/plugin.js"></script>
+    <script src="./assets/js/main.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</body>
+</html>
