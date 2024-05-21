@@ -237,9 +237,11 @@ html {
 
 /* HOME PAGE */
 .home-page {
-    background-image: url(/assets/img/home-bg.png);
+    /* background-image: url(/assets/img/home-bg.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+
+    background:#5c2125;
     padding-top: 120px;
     padding-bottom: 200px;
     position: relative;
@@ -265,7 +267,7 @@ html {
 
 .home-title-wrapper {
     color: var(--white);
-    font-family: var(--big-title);
+    font-family: var(--big-title-sub);
 }
 
 .home-typo-img {
@@ -282,8 +284,8 @@ html {
     position: fixed;
     text-align: justify;
     font-weight: 200;
-    font-family: var(--big-title);
-    font-size: 1.4rem;
+    font-family: var(--big-title-sub);
+    font-size: 1.2rem;
     color: var(--white);
     top: -40px;
     left: 124px;
@@ -402,7 +404,7 @@ html {
 }
 
 .button.register {
-    font-family: var(--big-title);
+    font-family: var(--big-title-sub);
     font-weight: 800;
     font-size: 1.4rem;
 }
@@ -499,7 +501,7 @@ html {
 }
 
 .works-general-heading {
-    font-family: var(--big-title);
+    font-family: var(--big-title-sub);
     color: var(--white);
     margin-bottom: 120px;
     font-size: 1.4rem;
@@ -552,7 +554,7 @@ html {
 }
 
 .works-heading {
-    font-family: var(--big-title);
+    font-family: var(--big-title-sub);
     font-size: 2rem;
     font-weight: 900;
     margin-top: 0;
@@ -610,7 +612,7 @@ html {
 }
 
 .about-heading-season {
-    font-family: var(--big-title);
+    font-family: var(--big-title-sub);
     font-weight: 900;
     font-size: 1.8rem;
     margin: 0;
@@ -618,7 +620,7 @@ html {
 }
 
 .about-heading {
-    font-family: var(--big-title);
+    font-family: var(--big-title-sub);
     font-weight: 900;
     font-size: 2rem;
     margin-top: 0px;
@@ -682,7 +684,7 @@ html {
 .rule-content-title,
 .competition-title {
     color: var(--red);
-    font-family: var(--big-title);
+    font-family: var(--big-title-sub);
     text-transform: uppercase;
     font-weight: 900;
 }
@@ -812,7 +814,7 @@ html {
 
 .classify-category--name {
     font-weight: 900;
-    font-family: var(--big-title);
+    font-family: var(--big-title-sub);
 }
 
 .classify-category-list-item::after {
@@ -935,7 +937,7 @@ html {
 }
 
 .award-heading-sub {
-    font-family: var(--big-title);
+    font-family: var(--big-title-sub);
     font-size: 1.4rem;
     color: var(--white);
     margin-top: 50px;
@@ -1252,7 +1254,7 @@ footer {
 
 .footer-heading {
     color: var(--white);
-    font-family: var(--big-title);
+    font-family: var(--big-title-sub);
     font-size: 3.8rem;
     margin: 0;
     font-weight: 800;
@@ -1286,7 +1288,7 @@ footer {
 
 .footer-contact-heading {
     color: var(--white);
-    font-family: var(--big-title);
+    font-family: var(--big-title-sub);
     font-size: 1.7rem;
 }
 
@@ -1474,7 +1476,7 @@ footer {
         display: block;
         color: var(--red);
         font-weight: 900;
-        font-family: var(--big-title);
+        font-family: var(--big-title-sub);
     }
     .classify-color-line {
         display: none;
