@@ -369,6 +369,7 @@ html {
 
 .home-text {
     margin-top: 0;
+    line-height: 1.6;
 }
 
 .home-subtext {
@@ -1252,7 +1253,7 @@ html {
 /* FOOTER */
 footer {
     padding-top: 80px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
     background-color: #111;
     /* background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%)); */
 
