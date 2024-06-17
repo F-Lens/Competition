@@ -115,16 +115,17 @@
 }
 
 .btn-new--action {
+  opacity: 0.9;
   display: block;
   width: 50%;
   padding: 1rem;
   border-radius: 1.5rem;
   /* background-color: #f6e58d; */
-  background-color: var(--pink-primary);
+  background-color: #888;
   color: #000;
   transition: all .5s ease 0s; 
   /* box-shadow: 0 10px #f9ca24; */
-  box-shadow: 0 10px red;
+  box-shadow: 0 10px #333;
 }
 
 .btn-new--action span{
